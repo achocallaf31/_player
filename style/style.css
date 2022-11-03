@@ -1,13 +1,13 @@
 #video-id {
-    border-radius: 12px;
+    border-radius: 12px !important;
 }
 
 .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container {
-    border-radius: 12px;
+    border-radius: 12px !important;
 } 
 
 .fluid_video_wrapper.fluid_player_layout_default .fluid_context_menu ul {
-    display: none;
+    display: none !important;
 }
 
 .fluid_timeline_preview {
