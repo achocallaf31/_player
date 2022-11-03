@@ -49,8 +49,8 @@ section {
 
 .container {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 640px;
+  height: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,8 +234,8 @@ section {
 
 @media (max-width: 430px) {
   .container {
-    width: 100%;
-    height: 100%;
+    width: 640px;
+    height: 360px;
     display: contents;
     justify-content: center;
     align-items: center;
