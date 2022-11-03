@@ -1,5 +1,21 @@
+@font-face {
+    font-family: 'gwarayu';
+    src: url(fuente/Gwarayu-Regular.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  } 
+  
+
 #video-id {
     border-radius: 12px !important;
+}
+
+.fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_fluid_control_duration {
+    font-family: 'gwarayu' !important;
+    font-weight: 600 !important;
 }
 
 .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container {
@@ -17,3 +33,14 @@
 .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_play:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_pause:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_skip_back:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_skip_forward:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_volume:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_mute:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_video_source:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_fullscreen:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_fullscreen_exit:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_playback_rate:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_download:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_theatre:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_subtitles:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_button.fluid_button_cardboard:before, .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container .fluid_controls_right .fluid_control_volume_container {
     opacity: 100% !important;
 }
+
+@media (max-width: 500px) {
+    #video-id {
+      border-radius: 0px !important;
+    }
+
+    .fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container {
+        border-radius: 0px !important;
+      }
+
+}    
