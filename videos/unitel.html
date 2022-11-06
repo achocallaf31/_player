@@ -9,7 +9,7 @@
 </head>
 <body>
   <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
-<video id="video-id" autoplay><source src="https://cdn.digital.com.bo/__cl/cg:sworigin2/__c/UNITEL/__op/hls-default/__f/index.m3u8" type="application/x-mpegURL" />
+<video id="video-id" ><source src="https://cdn.digital.com.bo/__cl/cg:sworigin2/__c/UNITEL/__op/hls-default/__f/index.m3u8" type="application/x-mpegURL" />
 <script>
     var myFP = fluidPlayer(
         'video-id',	{
@@ -41,6 +41,9 @@
 		"adCTATextPosition": ""
 	}
 });
+</script>
+<script>
+document.getElementById('video-id').play();
 </script>
 </body>
 
