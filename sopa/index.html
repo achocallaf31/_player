@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+  <script type="text/javascript" src="wordfind.js"></script> 
+  <script type="text/javascript" src="wordfindgame.js"></script>
+  <title>Sopa de letras</title>
+</head>
+<body>
+  <div id="container">
+    <div id='puzzle'></div>
+    <div id='words'></div>
+    <div class="bth">
+      <button id='solve'>Hacer con ayuda</button>
+    </div>
+
+    <script>
+      var words = ['Ñepei','Ñuvlrio','Mbosapl','Irungatu','Poyandepo','Yovaive'];
+       var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
+       $('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});
+       var puzzle = wordfind.newPuzzle(words,{height: 18, width:15, fillBlanks: false});
+       wordfind.print(puzzle);
+     </script>
+  </div>
+</body>
+</html>
